@@ -26,7 +26,6 @@ export default function PdfUpload({
     fd.append("file", file, file.name);
 
     const res = await fetch("/api/run", { method: "POST", body: fd });
-    console.log("mer, res is ", res);
     const json = await res.json();
     onResults(json.weekDate ?? null, json.entries || []);
     setLoading(false);
@@ -52,7 +51,7 @@ export default function PdfUpload({
           onDragOver={(e) => e.preventDefault()}
           className="w-full border border-dashed rounded-xl text-sm p-10 text-neutral-100 bg-black flex justify-center"
         >
-          Drag this week's bestseller PDF here
+          Drag this week&apos;s bestseller PDF here
           {/* <div className="text-xs text-neutral-100">
             Drop the advance PDF you receive. We’ll extract ranks for this week
             and compare against last week from the NYT overview.

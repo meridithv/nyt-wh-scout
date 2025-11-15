@@ -14,7 +14,7 @@ export default function AgencyAuthors() {
     if (saved) setText(saved);
     else {
       const placeholder = [
-        "Nora Roberts|J.D. Robb",
+        "Nora Roberts | J.D. Robb",
         "Colleen Hoover",
         "Amor Towles",
         "David Grann",

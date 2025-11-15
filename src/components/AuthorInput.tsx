@@ -24,7 +24,12 @@ export default function AuthorInput() {
         rows={12}
         value={blob}
         onChange={(e) => persist(e.target.value)}
-        placeholder="Nora Roberts|J.D. Robb&#10;Colleen Hoover"
+        placeholder={`Type your authors' names here. Aliases can be added with a pipe.
+
+Nora Roberts | J.D. Robb
+Colleen Hoover
+David Grann
+Amor Towles`}
       />
       <div className="text-lg font-medium text-neutral-100 p-2 bg-stone-950 text-right">
         MY AUTHORS
